@@ -1,0 +1,28 @@
+{
+  "name": "docker-node-template",
+  "version": "1.0.0",
+  "description": "Docker NodeJS template.",
+  "main": "index.js",
+  "scripts": {
+    "test": "lint-staged",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.js": ["npx standard --fix"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitreis/docker-node-template.git"
+  },
+  "author": "Rafael Reis Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitreis/docker-node-template/issues"
+  },
+  "homepage": "https://github.com/gitreis/docker-node-template#readme",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "standard": "^17.0.0"
+  }
+}
