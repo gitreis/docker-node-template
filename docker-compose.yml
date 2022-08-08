@@ -1,11 +1,13 @@
-version: "3.8"
+version: "2.9"
 services:
   node-app:
     build: .
+    container_name: nodejs
+    restart: always
     ports:
-      -"8888:80"
+      - 8888:8888
     volumes:
       - ./:/app
-      - ./app/node_modules
+      - /app/node_modules
     env_file:
       - ./.env
