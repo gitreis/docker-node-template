@@ -4,11 +4,15 @@
   "description": "Docker NodeJS template.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon -L index.js",
     "test": "lint-staged",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.js": ["npx standard --fix"]
+    "*.js": [
+      "npx standard --fix"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,8 +25,10 @@
   },
   "homepage": "https://github.com/gitreis/docker-node-template#readme",
   "devDependencies": {
+    "express": "^4.18.1",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.19",
     "standard": "^17.0.0"
   }
 }
